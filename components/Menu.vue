@@ -1,7 +1,7 @@
 <template>
   <div class="menu">
     <div class="menu-btn">
-      <nuxt-link style="color:rgba(0,0,0,0)" class="menu-icon" icon to="/about">
+      <nuxt-link style="color:rgba(0,0,0,0)" class="menu-icon" icon :to="'/' + page">
         <v-icon
           :class="isDarkMode? 'menu-i-dark' : 'menu-i-light'"
           class="menu-i"

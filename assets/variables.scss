@@ -1,4 +1,64 @@
 // Ref: https://github.com/nuxt-community/vuetify-module#customvariables
-//
-// The variables you want to modify
-// $font-size-root: 20px;
+
+/* base colours */
+$white: #FCFCFC;
+$slateblue: #8083FF;
+$darkgrey: #5C5C5C;
+$lightgrey: #A6A6A6;
+$whitegrey: #DDDDDD;
+$icyblue: #F2F7FA;
+$turquoise: #B4DCED;
+$twilight: #e0ddf0;
+$skyblue: #81cdde;
+
+/*back ground*/
+$bg-colour1: #FCFCFC;
+$bg-colour2: #faf7ff;
+
+
+/* font */
+$text-font: 'Quicksand', sans-serif;
+$header-font: 'Source Code Pro', monospace;
+$jp-font: 'Shippori Mincho', serif;
+
+/* font size */
+$bg-size: 120px;
+$header-size: 60px;
+$title-size: 30px;
+$subtitle-size: 20px;
+$mobile-text-size: 16px;
+
+
+// use this line to customize your own vuetify variables.
+@import '~vuetify/src/styles/styles.sass';
+
+// theme to override, same applies for $material-light
+$material-light: map-merge(
+  $material-light,
+  (
+    'background': $bg-colour1,
+    'text': (
+      'primary': $darkgrey,
+      'secondary': $darkgrey,
+    ),
+  )
+);
+
+$material-dark: map-merge(
+    $material-dark,
+    (
+      'background': $darkgrey,
+      'text': (
+        'primary': $white,
+      ),
+    )
+);
+
+
+
+/*
+  -- google font available --
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Shippori Mincho', serif;
+  font-family: 'Source Code Pro', monospace;
+*/

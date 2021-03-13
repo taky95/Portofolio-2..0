@@ -6,23 +6,31 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - portfolio2.0',
-    title: 'portfolio2.0',
+    titleTemplate: '%s |takumi.minohara',
+    // title: '',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: 'takumi&#39;s portfolio' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?' +
+          'family=Quicksand:wght@400;600&' +
+          'family=Shippori+Mincho:wght@500&' +
+          'family=Source+Code+Pro:wght@300&display=swap'
+      }
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    // '~/assets/variables.scss'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -37,22 +45,53 @@ export default {
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/vuetify
-    '@nuxtjs/vuetify'
+    '@nuxtjs/vuetify',
+    '@nuxtjs/style-resources',
+    'nuxt-gsap-module'
   ],
+
+  gsap: {
+    extraPlugins: {
+      draggable: true
+    }
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
   ],
 
+  styleResources: {
+    scss: ['./assets/*.scss']
+  },
+
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
+    treeShake: true,
+    defaultAssets: {
+      font: {
+        family: 'Quicksand'
+      },
+      icons: 'mdi'
+    },
+    icons: {
+      iconfont: 'mdi'
+    },
     theme: {
-      dark: true,
+      // dark: false,
       themes: {
+        light: {
+          primary: '#5C5C5C',
+          accent: '#81cdde',
+          secondary: colors.amber.darken3,
+          info: colors.teal.lighten1,
+          warning: colors.amber.base,
+          error: colors.deepOrange.accent4,
+          success: colors.green.accent3
+        },
         dark: {
-          primary: colors.blue.darken2,
-          accent: colors.grey.darken3,
+          primary: '#DDDDDD',
+          accent: '#8083FF',
           secondary: colors.amber.darken3,
           info: colors.teal.lighten1,
           warning: colors.amber.base,

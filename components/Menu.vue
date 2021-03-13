@@ -46,6 +46,7 @@ export default {
     }
   },
   mounted () {
+    this.fadeInMenu()
   },
   methods: {
     showLbl () {
@@ -56,6 +57,15 @@ export default {
     hideLbl () {
       if (this.isHidden === false) {
         this.isHidden = !this.isHidden
+      }
+    },
+    fadeInMenu () {
+      const gsap = this.$gsap.timeline()
+      const menu = document.getElementsByClassName('menu-i')
+      for (let i = 0; i < menu.length; i++) {
+        const child = this.$gsap.timeline()
+        child.fromTo(menu[i], { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 2, ease: 'expo.out' })
+        gsap.add(child, '<0.2')
       }
     }
   }

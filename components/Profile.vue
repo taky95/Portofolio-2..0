@@ -17,6 +17,7 @@
   width: 200px;
   position: relative;
   z-index: 1;
+  animation: fade-in-left 1s ease-out;
 }
 
 .profile::after{
@@ -29,5 +30,6 @@
   z-index: 0;
   top: -70px;
   left: 130px;
+  animation: fade-in-right 1s ease-out;
 }
 </style>

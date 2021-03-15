@@ -17,7 +17,7 @@
         :class="[{ hiddenLbl: isHidden }, isDarkMode? 'menu-lbl-dark' : 'menu-lbl-light']"
         class="menu-lbl"
       >
-        {{ page }}
+        {{ title }}
       </label>
     </div>
   </div>
@@ -28,16 +28,21 @@ export default {
   props: {
     page: {
       type: String,
-      default: 'index'
+      default: ''
     },
     icon: {
       type: String,
       default: 'mdi-home-circle'
+    },
+    title: {
+      type: String,
+      default: 'home'
     }
   },
   data () {
     return {
-      isHidden: true
+      isHidden: true,
+      isSelected: false
     }
   },
   computed: {

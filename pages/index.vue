@@ -5,14 +5,13 @@
     </v-col>
     <v-col cols="12" sm="8" md="6">
       <div class="menu-list">
-        <Menu page="About" icon="mdi-account-details" />
-        <Menu page="Works" icon="mdi-file-code" />
-        <Menu page="Photos" icon="mdi-camera-iris" />
-        <Menu page="Contact" icon="mdi-human-greeting-proximity" />
+        <Menu page="About" icon="mdi-account-details" title="About" />
+        <Menu page="Works" icon="mdi-file-code" title="Works" />
+        <Menu page="Photos" icon="mdi-camera-iris" title="Photos" />
+        <Menu page="Contact" icon="mdi-human-greeting-proximity" title="Contact" />
       </div>
       <div class="switch-list">
         <DarkmodeSwitch id="dark-mode-switch" />
-        <DraggableMenu />
       </div>
     </v-col>
   </v-row>
@@ -22,14 +21,12 @@
 import Logo from '~/components/Logo.vue'
 import Menu from '~/components/Menu.vue'
 import DarkmodeSwitch from '~/components/Darkmode.vue'
-import DraggableMenu from '~/components/DraggableMenu'
 
 export default {
   components: {
     Logo,
     Menu,
-    DarkmodeSwitch,
-    DraggableMenu
+    DarkmodeSwitch
   },
   head () {
     return {

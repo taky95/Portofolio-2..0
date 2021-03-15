@@ -18,21 +18,20 @@
           </p>
           <div class="text-right">
             <v-btn class="resume-btn" color="accent">
-              Resume
+              <v-icon>mdi-download</v-icon>Resume
             </v-btn>
           </div>
         </div>
       </v-col>
     </v-row>
     <v-row cols="6" md="4">
-      <toolbox />
+      <toolbox title="Languages" :content="skill"></toolbox>
     </v-row>
     <v-row cols="6" md="4">
-      <toolbox />
+      <toolbox title="Tools" :content="tools"></toolbox>
     </v-row>
   </v-col>
 </template>
-
 <script>
 import toolbox from '~/components/Toolbox.vue'
 import profile from '~/components/Profile.vue'
@@ -44,6 +43,20 @@ export default {
     profile,
     socialBtn
   },
+  data () {
+    return {
+      skill: [
+        { name: 'github', icon: 'mdi-github', text: 'used in projects, intermediate, familiar', exp: 50 },
+        { name: 'Ruby on Rails', icon: 'mdi-language-ruby-on-rails', text: 'known, learning', exp: 60 },
+        { name: 'Django', icon: 'mdi-language-python', text: 'Best experienced', exp: 70 }
+      ],
+      tools: [
+        { name: 'visual studio', icon: 'mdi-github', text: '4yrs+ experience', exp: 40 },
+        { name: 'Pycharm', icon: 'mdi-language-html5', text: '4yrs+ experience', exp: 20 },
+        { name: 'Nuxt', icon: 'mdi-language-javascript', text: '4yrs+ experience', exp: 60 }
+      ]
+    }
+  },
   head () {
     return {
       title: 'about'
@@ -52,7 +65,8 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+
 .about{
   max-width: 1200px;
   margin: 0 auto;
@@ -65,6 +79,7 @@ export default {
 .bio-header{
   text-align: left;
   font-weight: 400;
+  animation: fade-in 3s ease-out;
 }
 
 .bio-header h1, .bio-header h2{

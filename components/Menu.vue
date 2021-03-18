@@ -1,6 +1,6 @@
 <template>
-  <div class="menu">
-    <div class="menu-btn">
+  <div class="menu" :class="{disableBtn:onSamePage}">
+    <div id="isSelected" class="menu-btn">
       <nuxt-link style="color:rgba(0,0,0,0)" class="menu-icon" icon :to="'/' + page">
         <v-icon
           :class="isDarkMode? 'menu-i-dark' : 'menu-i-light'"
@@ -41,13 +41,17 @@ export default {
   },
   data () {
     return {
-      isHidden: true,
-      isSelected: false
+      isHidden: true
     }
   },
   computed: {
     isDarkMode () {
       return this.$vuetify.theme.dark
+    },
+    onSamePage () {
+      const title = this.$route.name.toLowerCase()
+      const page = this.title.toLowerCase()
+      return title === page
     }
   },
   mounted () {
@@ -72,7 +76,7 @@ export default {
         child.fromTo(menu[i], { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 2, ease: 'expo.out' })
         gsap.add(child, '<0.2')
       }
-    }
+    },
   }
 }
 </script>
@@ -240,6 +244,10 @@ export default {
   width: 100%;
   height: 100%;
   opacity: 1;
+}
+
+.disableBtn{
+  display: none;
 }
 
 </style>

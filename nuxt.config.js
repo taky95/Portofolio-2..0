@@ -6,7 +6,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s |takumi.minohara',
+    titleTemplate: '%s |takumi\'s website',
     // title: '',
     htmlAttrs: {
       lang: 'en'

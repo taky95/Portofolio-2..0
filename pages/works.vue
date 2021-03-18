@@ -1,6 +1,6 @@
 <template>
   <v-row>
-    <v-col cols="10" >
+    <v-col cols="10">
       <div class="worksContent" :class="{worksContentDark:isDarkMode}">
         <h1 class="worksTitle">
           {{ work.title }}
@@ -116,7 +116,7 @@ export default {
         desc: '',
         lang: '',
         lib: '',
-        tools: '',
+        tools: ''
       }
     }
   },
@@ -195,8 +195,18 @@ export default {
   animation: fade-in-up 1s ease-in;
 }
 
-.worksDemo{
+.worksTitle{
+  animation: fade-in-right 1s ease-in;
 }
+
+.worksThumb{
+  width: auto;
+  height: 400px;
+  filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.1));
+  margin: 2%;
+  border-radius: 3px;
+}
+
 .worksDemo a{
   margin: 2%;
 }
@@ -205,6 +215,11 @@ export default {
   padding: 1%;
   animation: fade-in-up 1s ease-in;
   opacity: 1;
+}
+
+.worksLbl{
+  text-align: right;
+  font-weight: bold;
 }
 
 .worksMenu{
@@ -216,6 +231,7 @@ export default {
 .worksMenuDark{
   border-left: $white 1px solid;
 }
+
 .worksMenuDark .selectedWork{
   color: $slateblue;
 }
@@ -225,28 +241,6 @@ export default {
   list-style: none;
   font-size: $subtitle-size;
   cursor: pointer;
-}
-
-.worksImg{
-  pointer-events: none;
-  position: absolute;
-  bottom: 7%;
-  right: 14%;
-  width: 20%;
-  opacity: 0.8;
-}
-
-.worksThumb{
-  width: auto;
-  height: 400px;
-  filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.1));
-  margin: 2%;
-  border-radius: 3px;
-}
-
-.worksLbl{
-  text-align: right;
-  font-weight: bold;
 }
 
 .worksMenu li::after{
@@ -270,8 +264,13 @@ export default {
   animation: fade-in-left .5s ease-out;
 }
 
-.worksTitle{
-  animation: fade-in-right 1s ease-in;
+.worksImg{
+  pointer-events: none;
+  position: absolute;
+  bottom: 7%;
+  right: 14%;
+  width: 20%;
+  opacity: 0.8;
 }
 
 </style>

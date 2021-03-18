@@ -54,6 +54,7 @@ $material-dark: map-merge(
     )
 );
 
+// animations
 @keyframes fade-in{
   0%{
     opacity: 0;
@@ -63,7 +64,15 @@ $material-dark: map-merge(
   }
 }
 
-// animations
+@keyframes moveUnder {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 50%;
+  }
+}
+
 @keyframes fade-in-left {
   0%{
     opacity: 0;

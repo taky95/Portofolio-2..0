@@ -1,4 +1,5 @@
 import colors from 'vuetify/es5/util/colors'
+require('dotenv').config()
 
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
@@ -47,8 +48,18 @@ export default {
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
     '@nuxtjs/style-resources',
+    '@nuxtjs/axios',
+    '@nuxtjs/dotenv',
     'nuxt-gsap-module'
   ],
+
+  env: {
+    WP_REST_API_BASE_URL: process.env.WP_REST_API_BASE_URL
+  },
+
+  axios: {
+    baseURL: process.env.WP_REST_API_BASE_URL // baseURLの設定
+  },
 
   gsap: {
     extraPlugins: {
@@ -101,7 +112,6 @@ export default {
       }
     }
   },
-
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }

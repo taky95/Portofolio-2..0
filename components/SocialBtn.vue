@@ -27,9 +27,6 @@
         mdi-email-mark-as-unread
       </v-icon>
     </v-btn>
-
-
-
   </div>
 </template>
 

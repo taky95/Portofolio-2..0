@@ -1,5 +1,5 @@
 <template>
-  <v-col class="about" justify="center" align="center">
+  <v-col class="about" justify="center">
     <v-row cols="6" md="4">
       <v-col cols="6" md="4">
         <v-row style="justify-content: center">
@@ -25,10 +25,13 @@
       </v-col>
     </v-row>
     <v-row cols="6" md="4">
-      <toolbox title="Languages" :content="skill"></toolbox>
+      <toolbox
+        title="Languages"
+        :content="skill"
+      />
     </v-row>
     <v-row cols="6" md="4">
-      <toolbox title="Tools" :content="tools"></toolbox>
+      <toolbox title="Tools" :content="tools" />
     </v-row>
   </v-col>
 </template>

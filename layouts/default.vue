@@ -16,7 +16,7 @@
     >
       <v-icon>mdi-plus</v-icon>
     </v-btn>
-    <img :class="{bgImgDark:isDarkMode}" class="bg-img" src="~assets/img/bg-img1.svg" alt="">
+    <img id="moveImg" :class="{bgImgDark:isDarkMode}" class="bg-img" src="~assets/img/bg-img1.svg" alt="">
     <v-footer
       :absolute="!fixed"
       app
@@ -53,7 +53,9 @@
         style="bottom: 10%; right: 5%"
         @click.stop="openMenu=!openMenu"
       >
-        <v-icon style="transform: rotate(45deg)">mdi-plus</v-icon>
+        <v-icon style="transform: rotate(45deg)">
+          mdi-plus
+        </v-icon>
       </v-btn>
     </v-navigation-drawer>
   </v-app>
@@ -79,7 +81,7 @@ export default {
         { title: 'About', page: 'About', icon: 'mdi-account-details' },
         { title: 'Works', page: 'Works', icon: 'mdi-file-code' },
         { title: 'Photos', page: 'Photos', icon: 'mdi-camera-iris' },
-        { title: 'Contact', page: 'Contact', icon: 'mdi-human-greeting-proximity' },
+        { title: 'Contact', page: 'Contact', icon: 'mdi-human-greeting-proximity' }
       ]
     }
   },
@@ -94,6 +96,7 @@ export default {
 <style lang="scss">
 #main{
   position: relative;
+  overflow: hidden;
 }
 
 .bg-img{
@@ -104,6 +107,7 @@ export default {
   z-index: 0;
   mix-blend-mode: multiply;
   pointer-events: none;
+  animation: up-and-down 15s linear infinite;
 }
 
 .bgImgDark{

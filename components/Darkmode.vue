@@ -4,11 +4,6 @@
 
 <script>
 export default {
-  data () {
-    return {
-      // switch1: false
-    }
-  }
 }
 </script>
 

@@ -13,6 +13,8 @@
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^2.0.2",
+    "@nuxtjs/axios": "^5.13.1",
+    "@nuxtjs/dotenv": "^1.4.1",
     "core-js": "^3.8.3",
     "kute.js": "^2.1.0",
     "nuxt": "^2.14.12",

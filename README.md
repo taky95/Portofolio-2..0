@@ -14,13 +14,17 @@ Takumi's portfolio2.0
 ![alt text](https://img.shields.io/badge/-Javascript-ffe44a.svg?logo=javascript&style=popout "nuxt")
 ![alt text](https://img.shields.io/badge/-Eslint-4B32C3.svg?logo=eslint&style=popout "nuxt")
 
-## Third-party Plugins
+## Dependencies
 * google fonts
 * kute.js
 * nuxt-gsap-module
 * nuxt-sass-resources-loader
 * vue-typical
 * vuetify
+* vue-silentbox
+* SnazzyMaps
+* SendinBlue
+* nuxtjs@/dotenv
 
 ## Build Setup
 ```bash

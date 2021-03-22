@@ -20,7 +20,7 @@
         </p>
         <v-btn
           color="accent"
-          href="https://stock.adobe.com/jp/contributor/208220138/%E5%B7%A7%20%E7%B0%91%E5%8E%9F"
+          href="https://stock.adobe.com/jp/contributor/208220138/Takumi.m"
           target="_blank"
         >
           <v-icon>mdi-image-album</v-icon> Adobe Stock
@@ -33,7 +33,7 @@
             Creative Commons Attribution 4.0 International License
           </a>.
           <div id="credit-wrap">
-            <input id="credit" type="text" name="credit_text" value="<a href=&quot;https://takumiminohara.site/&quot;>&copy;Takumi.M - 2021</a>" readonly>
+            <label for="credit" /><input id="credit" type="text" name="credit_text" value="<a href=&quot;https://takumiminohara.site/&quot;>&copy;Takumi.M - 2021</a>" readonly>
             <v-btn button @click="copyText()">
               Copy
             </v-btn>
@@ -98,7 +98,7 @@ export default {
 
 <style lang="scss" scoped>
 .photoGallery{
-  animation: fade-in 1s ease-in;
+  animation: fade-in .5s ease-in;
 }
 
 .photoDesc{

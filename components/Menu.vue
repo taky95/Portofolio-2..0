@@ -76,7 +76,7 @@ export default {
         child.fromTo(menu[i], { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 2, ease: 'expo.out' })
         gsap.add(child, '<0.2')
       }
-    },
+    }
   }
 }
 </script>

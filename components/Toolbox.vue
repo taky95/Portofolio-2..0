@@ -1,35 +1,37 @@
 <template>
   <div class="skill">
-    <v-col cols="6" md="4" style="text-align: right; padding-right: 12%">
-      <label class="skill-lbl" :class="{borderDark:isDarkMode}">{{ title }}</label>
-    </v-col>
-    <v-col>
-      <div class="toolbox" :class="{toolboxDark:isDarkMode}">
-        <v-icon
-          v-for="object in content"
-          :key="object.index"
-          size="50"
-          :color="isSelected(object.icon)"
-          @click="selectIcon(object); clicked()"
-        >
-          {{ object.icon }}
-        </v-icon>
-        <div class="skillDesc">
-          <h3>
-            {{ skillName }}
-          </h3>
-          <p>{{ skillDesc }}</p>
-          <p>{{ skillExp *2 /10 }} yrs+ experience</p>
+    <v-row>
+      <v-col cols="12" md="4" style="text-align: right; padding-right: 12%">
+        <label class="skill-lbl" :class="{borderDark:isDarkMode}">{{ title }}</label>
+      </v-col>
+      <v-col cols="12" md="8">
+        <div class="toolbox" :class="{toolboxDark:isDarkMode}">
+          <v-icon
+            v-for="object in content"
+            :key="object.index"
+            size="50"
+            :color="isSelected(object.icon)"
+            @click="selectIcon(object); clicked()"
+          >
+            {{ object.icon }}
+          </v-icon>
+          <div class="skillDesc">
+            <h3>
+              {{ skillName }}
+            </h3>
+            <p>{{ skillDesc }}</p>
+            <p>{{ skillExp *2 /10 }} yrs+ experience</p>
+          </div>
+          <v-progress-linear
+            v-model="skillExp"
+            :buffer-value="bufferValue"
+            color="accent"
+            rounded
+            stream
+          />
         </div>
-        <v-progress-linear
-          v-model="skillExp"
-          :buffer-value="bufferValue"
-          color="accent"
-          rounded
-          stream
-        />
-      </div>
-    </v-col>
+      </v-col>
+    </v-row>
   </div>
 </template>
 <script>
@@ -131,6 +133,14 @@ export default {
   box-shadow: inset 0 0 3px $darkgrey;
   width: 100%;
   text-align: left;
+  @include sm {
+    margin: auto;
+    margin-bottom: 3%;
+  }
+  @include xs {
+    margin: auto;
+    margin-bottom: 3%;
+  }
 }
 
 .toolbox h3{

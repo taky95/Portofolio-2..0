@@ -138,6 +138,13 @@ export default {
 
 .menu-i{
   cursor: pointer;
+  @include sm {
+    font-size: $title-size !important;
+  }
+  @include xs {
+    animation: none;
+    font-size: $title-size !important;
+  }
 }
 
 .menu-i-light{
@@ -161,6 +168,12 @@ export default {
 // hide lbl when the page is loaded
 .hiddenLbl{
   visibility: hidden;
+  @include sm {
+    visibility: visible;
+  }
+  @include xs {
+    visibility: visible;
+  }
 }
 
 .menu-lbl{
@@ -168,12 +181,35 @@ export default {
   vertical-align: middle;
   font-size: $title-size;
   outline: none;
+  @include sm {
+    font-size: $subtitle-size;
+  }
+  @include xs {
+    font-size: $subtitle-size;
+    margin-left: 20px;
+  }
 }
 .menu-lbl-light{
   animation: light-fadeOut .5s ease-out forwards;
+  @include sm {
+    opacity: 1;
+    animation: none;
+  }
+  @include xs {
+    opacity: 1;
+    animation: none;
+  }
 }
 .menu-lbl-dark{
   animation: dark-fadeOut .5s ease-out forwards;
+  @include sm {
+    opacity: 1;
+    animation: none;
+  }
+  @include xs {
+    opacity: 1;
+    animation: none;
+  }
 }
 
 // Label fade in with light color on hover icon
@@ -196,6 +232,12 @@ export default {
   transition: all .3s ease;
   border-radius: 2px;
   // opacity: 0;
+  @include sm {
+    display: none;
+  }
+  @include xs {
+    display: none;
+  }
 }
 .menu-lbl::after{
   bottom: 3px;

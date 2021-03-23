@@ -68,6 +68,10 @@ export default {
 .contactMap{
   filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.1));
   pointer-events: none;
+  @include sm {
+  }
+  @include xs {
+  }
 }
 
 .contactMapDark{
@@ -76,6 +80,12 @@ export default {
 .contactMap svg{
   height: 250px;
   animation: fade-in-up 1s ease-in;
+  @include sm {
+    width: 50%;
+  }
+  @include xs {
+    width: 50%;
+  }
 }
 .contactFillDark{
   fill: $slateblue !important;

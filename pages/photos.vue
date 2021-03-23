@@ -1,13 +1,13 @@
 <template>
-  <v-row justify="center" align="stretch" align-content="stretch">
-    <v-col cols="9">
+  <v-row justify="center" align="stretch" align-content="stretch" class="mb-reverse">
+    <v-col cols="12" md="9">
       <div class="text-center photoGallery">
         <PhotoCollection
           :images="images"
         />
       </div>
     </v-col>
-    <v-col cols="3">
+    <v-col cols="12" md="3">
       <div class="photoDesc" :class="{photoDescDark:isDarkMode}">
         <h1>Photography</h1>
         <p>
@@ -121,6 +121,12 @@ export default {
   animation: moveUnder .5s ease-in;
   animation-delay: 1s;
   animation-fill-mode: forwards;
+  @include sm {
+    top: 80px;
+  }
+  @include xs {
+    top: 60px;
+  }
 }
 
 .photoDescDark{
@@ -138,5 +144,14 @@ export default {
   box-shadow: inset 0 0 2px $darkgrey;
   margin: 5%;
   padding: 2%;
+}
+
+.mb-reverse{
+  @include sm {
+    flex-direction: column-reverse;
+  }
+  @include xs {
+    flex-direction: column-reverse;
+  }
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <v-col class="about" justify="center">
-    <v-row cols="6" md="4">
-      <v-col cols="6" md="4">
+    <v-row >
+      <v-col cols="12" md="4">
         <v-row style="justify-content: center">
           <profile />
         </v-row>
@@ -9,7 +9,7 @@
           <socialBtn />
         </v-row>
       </v-col>
-      <v-col>
+      <v-col cols="12" md="8">
         <div class="bio-header">
           <h1>Takumi Minohara</h1>
           <h2>A developer with creative mind</h2>
@@ -24,13 +24,13 @@
         </div>
       </v-col>
     </v-row>
-    <v-row cols="6" md="4">
+    <v-row>
       <toolbox
         title="Languages"
         :content="skill"
       />
     </v-row>
-    <v-row cols="6" md="4">
+    <v-row>
       <toolbox title="Tools" :content="tools" />
     </v-row>
   </v-col>

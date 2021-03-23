@@ -106,7 +106,7 @@
                 576 1499 1029 272 379 363 762 363 1522 0 147 3 282 6 300 8 36 10 35 55 -54z"/>
         </g>
       </svg>
-      <svg xmlns="http://www.w3.org/2000/svg" width="399.33" height="417.923" viewBox="0 0 399.33 417.923">
+      <svg id="triangle" xmlns="http://www.w3.org/2000/svg" width="399.33" height="417.923" viewBox="0 0 399.33 417.923">
         <path
           id="shape1"
           class="triangle"
@@ -432,12 +432,27 @@ export default {
   position: relative;
   min-height: 700px;
   margin: 5% 5% 5% 30%;
+  @include sm {
+    min-height: 400px;
+    margin: 5%;
+  }
+  @include xs {
+    min-height: 200px;
+    margin: 5% 5% 5% 15%;
+  }
 }
 
 .glasses-logo{
   width: 300px;
   position: absolute;
   left: 300px;
+  @include sm {
+    left: 250px;
+  }
+  @include xs {
+    width: 50%;
+    left: 50%;
+  }
 }
 
 #stroke {
@@ -446,6 +461,14 @@ export default {
   stroke: $darkgrey;
   stroke-dasharray: 60000;
   stroke-dashoffset: 60000;
+}
+
+#triangle{
+  @include sm {
+  }
+  @include xs {
+    width: 70%;
+  }
 }
 
 .triangle{
@@ -461,6 +484,11 @@ h1{
   white-space: nowrap;
   filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.1));
   pointer-events: none;
+  @include sm {
+  }
+  @include xs {
+    font-size: $title-size;
+  }
 }
 
 p{
@@ -470,6 +498,16 @@ p{
   white-space: nowrap;
   filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.1));
   pointer-events: none;
+  @include sm {
+    white-space: normal;
+    font-size: $subtitle-size;
+    top: 300px;
+  }
+  @include xs {
+    font-size: $mobile-text-size;
+    white-space: normal;
+    top: 200px;
+  }
 }
 
 .typeAnimation::after{
@@ -483,6 +521,14 @@ p{
   left: 440px;
   cursor: pointer;
   transition: color .2s ease-in;
+  @include sm {
+    top: 300px;
+    left: 450px;
+  }
+  @include xs {
+    top: 55%;
+    left: 80%;
+  }
 }
 
 #solution.light:hover{
@@ -496,5 +542,15 @@ p{
   position: absolute;
   top: 350px;
   left: 120px;
+  @include sm {
+    width: 50%;
+    left: 100px;
+    top: 250px;
+  }
+  @include xs {
+    width: 70%;
+    left: 0;
+    top: 180px;
+  }
 }
 </style>

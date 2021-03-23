@@ -52,6 +52,12 @@ export default {
 
 .switch-list div{
   margin-left: 2%;
+  @include sm {
+    margin-left: 0;
+  }
+  @include xs {
+    margin-left: 0;
+  }
 }
 
 </style>

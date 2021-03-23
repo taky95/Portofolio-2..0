@@ -6,12 +6,11 @@
       </v-container>
     </v-main>
     <v-btn
-      class="mx-2"
+      class="mx-2 fltMenu"
       right
       fixed
       color="accent"
       fab
-      style="bottom: 10%; right: 5%"
       @click.stop="openMenu=!openMenu"
     >
       <v-icon>mdi-plus</v-icon>
@@ -25,6 +24,7 @@
       <span>&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
     <v-navigation-drawer
+      id="navDrawer"
       v-model="openMenu"
       absolute
       temporary
@@ -45,12 +45,11 @@
         <DraggableMenu />
       </div>
       <v-btn
-        class="mx-2"
+        class="mx-2 fltMenu"
         right
         fixed
         color="primary"
         fab
-        style="bottom: 10%; right: 5%"
         @click.stop="openMenu=!openMenu"
       >
         <v-icon style="transform: rotate(45deg)">
@@ -97,6 +96,12 @@ export default {
 #main{
   position: relative;
   overflow: hidden;
+  @include sm {
+    overflow: visible;
+  }
+  @include xs {
+    overflow: visible;
+  }
 }
 
 .bg-img{
@@ -117,5 +122,27 @@ export default {
 .switch-list{
   margin-left: 2%;
   padding-left: 20%;
+}
+
+.fltMenu{
+  bottom: 10%;
+  right: 5%;
+  @include sm {
+  }
+  @include xs {
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
+
+#navDrawer{
+  @include sm {
+    position: fixed !important;
+    height: 100vh !important;
+  }
+  @include xs {
+    position: fixed !important;
+    height: 100vh !important;
+  }
 }
 </style>

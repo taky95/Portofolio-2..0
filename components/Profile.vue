@@ -28,7 +28,7 @@
   position: absolute;
   pointer-events: none;
   z-index: 0;
-  top: -70px;
+  top: -60px;
   left: 130px;
   animation: fade-in-right 1s ease-out;
 }

@@ -1,6 +1,6 @@
 <template>
   <v-row>
-    <v-col cols="10">
+    <v-col cols="12" md="10">
       <div class="worksContent" :class="{worksContentDark:isDarkMode}">
         <h1 class="worksTitle">
           {{ work.title }}
@@ -27,25 +27,25 @@
         <div class="worksDesc">
           <v-container>
             <v-row>
-              <v-col cols="3" class="worksLbl">
+              <v-col cols="12" md="3" class="worksLbl">
                 Overview:
               </v-col>
               <v-col>{{ work.desc }}</v-col>
             </v-row>
             <v-row>
-              <v-col cols="3" class="worksLbl">
+              <v-col cols="12" md="3" class="worksLbl">
                 Language & Framework:
               </v-col>
               <v-col>{{ work.lang }}</v-col>
             </v-row>
             <v-row>
-              <v-col cols="3" class="worksLbl">
+              <v-col cols="12" md="3" class="worksLbl">
                 Libraries
               </v-col>
               <v-col>{{ work.lib }}</v-col>
             </v-row>
             <v-row>
-              <v-col cols="3" class="worksLbl">
+              <v-col cols="12" md="3" class="worksLbl">
                 Tools
               </v-col>
               <v-col>{{ work.tools }}</v-col>
@@ -55,7 +55,7 @@
       </div>
       <img class="worksImg" src="~/assets/img/coding.svg" alt="">
     </v-col>
-    <v-col cols="2">
+    <v-col cols="12" md="2">
       <div class="worksMenu" :class="{worksMenuDark:isDarkMode}">
         <ul>
           <li
@@ -205,6 +205,14 @@ export default {
   filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.1));
   margin: 2%;
   border-radius: 3px;
+  @include sm {
+    width: 70%;
+    height: auto;
+  }
+  @include xs {
+    width: 50%;
+    height: auto;
+  }
 }
 
 .worksDemo a{
@@ -220,12 +228,23 @@ export default {
 .worksLbl{
   text-align: right;
   font-weight: bold;
+  @include sm {
+    text-align: left;
+  }
+  @include xs {
+    text-align: left;
+  }
 }
 
 .worksMenu{
   border-left: $darkgrey 1px solid;
   height: 100%;
   margin-left: 20%;
+  @include sm {
+  }
+  @include xs {
+    margin: auto;
+  }
 }
 
 .worksMenuDark{

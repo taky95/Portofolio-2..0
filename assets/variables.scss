@@ -15,7 +15,6 @@ $skyblue: #81cdde;
 $bg-colour1: #FCFCFC;
 $bg-colour2: #faf7ff;
 
-
 /* font */
 $text-font: 'Quicksand', sans-serif;
 $header-font: 'Source Code Pro', monospace;
@@ -28,7 +27,33 @@ $title-size: 30px;
 $subtitle-size: 20px;
 $mobile-text-size: 16px;
 
+/* media queries */
+$xs: 600px; // small to large phone
+$sm: 960px; // small to medium tablet
+$md: 1264px;  // large tablet to laptop
+$lg: 1904px;  // desktop
 
+@mixin xs {
+  @media (max-width: ($xs)) {
+    @content;
+  }
+}
+@mixin sm {
+  @media (max-width: ($sm)) {
+    @content;
+  }
+}
+@mixin md {
+  @media (max-width: ($md)) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (max-width: ($lg)) {
+    @content;
+  }
+}
+ /* vuetify theme config */
 // use this line to customize your own vuetify variables.
 @import '~vuetify/src/styles/styles.sass';
 
@@ -54,7 +79,7 @@ $material-dark: map-merge(
     )
 );
 
-// animations
+/* animations */
 @keyframes fade-in{
   0%{
     opacity: 0;

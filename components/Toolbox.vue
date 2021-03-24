@@ -20,7 +20,7 @@
               {{ skillName }}
             </h3>
             <p>{{ skillDesc }}</p>
-            <p>{{ skillExp *2 /10 }} yrs+ experience</p>
+            <p>{{ skillExp * 2 }} % of familiarity</p>
           </div>
           <v-progress-linear
             v-model="skillExp"

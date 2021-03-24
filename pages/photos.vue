@@ -54,23 +54,25 @@ export default {
   data () {
     return {
       images: [
-        { src: require('~/assets/img/works/screenshot.png') },
-        { src: require('~/assets/img/works/screenshot2.png') },
-        { src: require('~/assets/img/works/screenshot3.png') },
-        { src: require('~/assets/img/works/screenshot4.png') },
-        { src: require('~/assets/img/works/screenshot.png') },
-        { src: require('~/assets/img/works/screenshot2.png') },
-        { src: require('~/assets/img/works/screenshot3.png') },
-        { src: require('~/assets/img/works/screenshot2.png') },
-        { src: require('~/assets/img/works/screenshot4.png') },
-        { src: require('~/assets/img/works/screenshot2.png') },
-        { src: require('~/assets/img/works/screenshot.png') },
-        { src: require('~/assets/img/works/screenshot2.png') },
-        { src: require('~/assets/img/works/screenshot2.png') },
-        { src: require('~/assets/img/works/screenshot3.png') },
-        { src: require('~/assets/img/works/screenshot2.png') },
-        { src: require('~/assets/img/works/screenshot2.png') },
-        { src: require('~/assets/img/works/screenshot2.png') }
+        { src: require('~/assets/img/photos/img-01.jpg') },
+        { src: require('~/assets/img/photos/img-02.jpg') },
+        { src: require('~/assets/img/photos/img-03.jpg') },
+        { src: require('~/assets/img/photos/img-04.jpg') },
+        { src: require('~/assets/img/photos/img-05.jpg') },
+        { src: require('~/assets/img/photos/img-06.jpg') },
+        { src: require('~/assets/img/photos/img-07.jpg') },
+        { src: require('~/assets/img/photos/img-08.jpg') },
+        { src: require('~/assets/img/photos/img-09.jpg') },
+        { src: require('~/assets/img/photos/img-10.jpg') },
+        { src: require('~/assets/img/photos/img-11.jpg') },
+        { src: require('~/assets/img/photos/img-12.jpg') },
+        { src: require('~/assets/img/photos/img-13.jpg') },
+        { src: require('~/assets/img/photos/img-14.jpg') },
+        { src: require('~/assets/img/photos/img-15.jpg') },
+        { src: require('~/assets/img/photos/img-16.jpg') },
+        { src: require('~/assets/img/photos/img-17.jpg') },
+        { src: require('~/assets/img/photos/img-18.jpg') },
+        { src: require('~/assets/img/photos/img-19.jpg') }
       ]
     }
   },

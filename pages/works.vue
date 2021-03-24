@@ -81,31 +81,59 @@ export default {
     return {
       works: [{
         img: require('~/assets/img/works/screenshot.png'),
-        url: 'https://takumiminohara.site',
-        git: 'https://github.com/taky95/wp-theme-takumi',
-        title: 'My Portfolio',
-        desc: 'This is my portfolio',
-        lang: 'WP, PHP JS',
-        lib: '-',
-        tools: 'GCP'
+        url: 'https://test.takumiminohara.site/',
+        git: 'https://github.com/taky95/simple-parallax-website-template',
+        title: 'Parallax Website',
+        desc: 'This was my early personal project. A parallax website template designed for simple use such as landing pages for small business owners. The project started when my friend started up a business and he needed something quick to spread the word. I configured it in only js and CSS, but I learnt a lot about CSS animation and basic Javascript from this project.',
+        lang: 'JS / jQuery / CSS / HTML',
+        lib: 'jQuery transition box / jQuery scrollTo',
+        tools: 'Sublime Text/GCP'
       }, {
         img: require('~/assets/img/works/screenshot2.png'),
-        url: 'https://takumiminohara.site',
-        git: 'https://github.com/taky95/wp-theme-takumi',
-        title: 'project2',
-        desc: 'This is my portfolio',
-        lang: 'WP, PHP JS',
+        url: 'https://rails.takumiminohara.site/ ',
+        git: 'https://github.com/ARealHumanBean/student-queue-project',
+        title: 'Student Queue Project',
+        desc: 'This is an app designed to be used in a school environment where students have to queue up to ask their questions meanwhile teachers can’t keep track of them, thus it leads to students missing the learning opportunities. This app reads the CSV form of the class list and creates users with categorized question lists. Students can log in to the app by using student credentials, and push the questions by the categories (such as the question, support, demo). Teachers can see the student’s questions along with who they are, and when they have asked. The queue is controlled in real-time sync, so there are no conflicts between students. I took part as a front engineer and mainly worked on UI. \n' +
+          'For demo purposes, sample users are provided. To log in as an instructor, use "C0000001", and use "C0000002" to log in as a student.',
+        lang: 'JS / CoffeeScript / CSS / HTML / Bootstrap / Ruby on Rails / MySQL',
         lib: '-',
-        tools: 'GCP'
+        tools: 'AWE(cloud9 IDE) / Heroku / Github / Google Fonts'
+      }, {
+        img: require('~/assets/img/works/screenshot4.png'),
+        url: 'https://react.takumiminohara.site',
+        git: 'https://github.com/taky95/spa-react-template',
+        title: 'SPA Website',
+        desc: 'This is my personal project. A SPA website that runs smooth video background, and fully responsive. I created this on the assumption of taking the same project as the Parallax website and wanted to provide an improved version by configuring React. The site is using React Router to make SPA features to prevent users from loading each page.  ',
+        lang: 'React / HTML / Scss',
+        lib: 'Animate.css / Google Fonts',
+        tools: 'Bracket / GCP'
       }, {
         img: require('~/assets/img/works/screenshot3.png'),
-        url: 'https://takumiminohara.site',
-        git: 'https://github.com/taky95/wp-theme-takumi',
-        title: 'project3',
-        desc: 'This is my portfolio',
-        lang: 'WP, PHP JS',
+        url: 'http://capstone.camosun.ca/archived-capstone/June2017/',
+        git: 'https://gitlab.com/camosunwebcommittee/tech-symposium',
+        title: 'Capstone Project',
+        desc: 'Landing page for Camosun College capstone project 2017. I took part as a front-end developer. ',
+        lang: 'PHP / HTML / CSS',
         lib: '-',
-        tools: 'GCP'
+        tools: 'GitLab / Heroku'
+      }, {
+        img: require('~/assets/img/works/noimg.png'),
+        url: '/',
+        git: 'https://github.com/ProGorilla007/Macy ',
+        title: 'Macy',
+        desc: 'This is my personal project. A web application provides a customizable link hub page that can be shared by a dedicated NFC card. It’s started in mind to replace a traditional business card with NFC cards has all of your social media and links. It is supposed to help get rid of the hassle to exchange multiple contact information or help to advertise your business’s social media accounts just by a tap at the cashier. Users can create the links from preset social media, or choose their own links to share. The user page can be customized freely by uploading your profile and header images. \n**It’s currently in development. **',
+        lang: 'Python / Django / JS / HTML / Sass / jQuery / MySQL',
+        lib: 'Materialize.css / emergence.js',
+        tools: 'PyCharm / GitHub'
+      }, {
+        img: require('~/assets/img/works/screenshot5.png'),
+        url: '/',
+        git: 'https://github.com/taky95/wp-theme-takumi ',
+        title: 'Portfolio 1.0',
+        desc: 'This was my first portfolio based on WP. I wanted to learn more about CMS and server-side programming, so I chose to do it on WordPress. Now, it’s providing an API to help this website work. ',
+        lang: 'PHP / WordPress / JS / Scss / jQuery',
+        lib: 'emergence.js, lit.js / jQuery scrollTo.js / jQuery vide.js / Animate.css',
+        tools: 'GCP / Bracket / CloudFlare / GitHub'
       }],
       // selected work data
       work: {
@@ -286,8 +314,8 @@ export default {
 .worksImg{
   pointer-events: none;
   position: absolute;
-  bottom: 7%;
-  right: 14%;
+  bottom: 1%;
+  right: 5%;
   width: 20%;
   opacity: 0.8;
 }

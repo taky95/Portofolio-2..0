@@ -12,12 +12,12 @@
       <v-col cols="12" md="8">
         <div class="bio-header">
           <h1>Takumi Minohara</h1>
-          <h2>A developer with creative mind</h2>
+          <h2>Providing solutions with creativeness in mind.</h2>
           <p>
-            Debra Carroll knows that successful students become successful adults. This is her 15th year at Edison Elementary School and her 10th year teaching fourth grade. So far, fourth grade is her favorite grade to teach! Mrs. Carroll was the 2011 Newell Unified School District Teacher of the Year, and received her National Board Certification in 2013. She loves science and majored in biology at Arizona State University, where she also earned her teaching credential and Master of Education degree. Mrs. Carroll is excited to begin the best year ever!
+            Web development is my passion and I’m always seeking the best practices that match problems to solve the difficult situation. In the past projects, I often took part as a front-end developer designing UI/UX and creating animation to guide users through the websites efficiently. The responsibilities vary from designing a mockup to writing a function using Ajax. I’m also eager to follow new technology trends and apply them in my own coding. In 2017, I graduated from Computer System Technology at Camosun College, and since then I have been specializing in web development. The languages I’m best at are JavaScript, CSS, Vue, Python, etc. Although my strength lies in the front-end side, I love building back-end systems too, and my current goal is to become a full-stack developer.
           </p>
           <div class="text-right">
-            <v-btn class="resume-btn" color="accent">
+            <v-btn class="resume-btn" href="/Resume.pdf" color="accent" target="_blank">
               <v-icon>mdi-download</v-icon>Resume
             </v-btn>
           </div>
@@ -49,14 +49,36 @@ export default {
   data () {
     return {
       skill: [
-        { name: 'github', icon: 'mdi-github', text: 'used in projects, intermediate, familiar', exp: 50 },
-        { name: 'Ruby on Rails', icon: 'mdi-language-ruby-on-rails', text: 'known, learning', exp: 60 },
-        { name: 'Django', icon: 'mdi-language-python', text: 'Best experienced', exp: 70 }
+        { name: 'HTML5', icon: 'mdi-language-html5', text: 'Advanced', exp: 100 },
+        { name: 'CSS3', icon: 'mdi-language-css3', text: 'Advanced: Saas/Scss/Bootstrap/Materialize.css/Animate.css', exp: 100 },
+        { name: 'JavaScript', icon: 'mdi-language-javascript', text: 'Experienced: CoffeeScript/GSAP/jQuery', exp: 80 },
+        { name: 'Typescript  ', icon: 'mdi-language-typescript', text: 'Learning: -', exp: 20 },
+        { name: 'React', icon: 'mdi-react', text: 'Familiar: React router/Redux', exp: 40 },
+        { name: 'Vue', icon: 'mdi-vuejs', text: 'Intermediate: Nuxt/Vuetify', exp: 50 },
+        { name: 'Python', icon: 'mdi-language-python', text: 'Intermediate: Django', exp: 50 },
+        { name: 'Ruby', icon: 'mdi-language-ruby', text: 'Experienced: Ruby on Rails', exp: 80 },
+        { name: 'PHP', icon: 'mdi-language-php', text: 'Intermediate: WordPress', exp: 50 },
+        { name: 'Java', icon: 'mdi-language-java', text: 'Familiar: Learnt OOP through Java.', exp: 40 },
+        { name: 'MySQL', icon: 'mdi-database', text: 'Experienced: used along Ruby on Rails and Django.', exp: 80 },
       ],
       tools: [
-        { name: 'visual studio', icon: 'mdi-github', text: '4yrs+ experience', exp: 40 },
-        { name: 'Pycharm', icon: 'mdi-language-html5', text: '4yrs+ experience', exp: 20 },
-        { name: 'Nuxt', icon: 'mdi-language-javascript', text: '4yrs+ experience', exp: 60 }
+        { name: 'npm/yarn ', icon: 'mdi-npm', text: 'Experienced', exp: 80 },
+        { name: 'Eslint', icon: 'mdi-eslint', text: 'Experienced', exp: 80 },
+        { name: 'Git/GitHub/GitLab', icon: 'mdi-git', text: 'Experienced', exp: 80 },
+        { name: 'Apache', icon: 'mdi-feather', text: 'All of my projects are hosted on an Apache server.', exp: 50 },
+        { name: 'GCP/GCE', icon: 'mdi-google-cloud', text: 'All of my projects are hosted on Google cloud servers. ', exp: 50 },
+        { name: 'Google Analytics', icon: 'mdi-google-analytics', text: 'Learning', exp: 20 },
+        { name: 'Cloudflare', icon: 'mdi-weather-partly-cloudy', text: 'Enabling easy setup for  HTTPS connection for my sites.', exp: 50 },
+        { name: 'Adobe CC', icon: 'mdi-infinity', text: 'Photoshop/AdobeXD/Lightroom', exp: 80 },
+        { name: 'InVision', icon: 'mdi-shape-square-plus', text: 'Familiar', exp: 40 },
+        { name: 'VSC', icon: 'mdi-microsoft-visual-studio-code', text: 'Familiar', exp: 40 },
+        { name: 'Jetbrains', icon: 'shape-polygon-plus', text: 'Intermediate', exp: 50 },
+        { name: 'Linux', icon: 'mdi-linux', text: 'Experienced: Vim is my preferred editor.', exp: 80 },
+        { name: 'Debian', icon: 'mdi-debian', text: 'All of my projects are based on the Debian server.', exp: 80 },
+        { name: 'Ubuntu', icon: 'mdi-ubuntu', text: 'Familiar.', exp: 40 },
+        { name: 'Windows', icon: 'mdi-microsoft-windows', text: 'Experienced', exp: 80 },
+        { name: 'macOS', icon: 'mdi-desktop-mac-dashboard', text: 'Often used MAMP to set up a development environment. / My main computer.', exp: 80 },
+        { name: 'Slack', icon: 'mdi-slack', text: 'Experienced', exp: 80 }
       ]
     }
   },

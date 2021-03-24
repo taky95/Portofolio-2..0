@@ -44,6 +44,11 @@
         <DarkmodeSwitch id="dark-mode-switch" />
         <DraggableMenu />
       </div>
+      <v-divider />
+      <div class="credit">
+        <p>Credits</p>
+        <a href="https://www.vecteezy.com/free-vector/shapes">Shapes Vectors by Vecteezy</a>
+      </div>
       <v-btn
         class="mx-2 fltMenu"
         right
@@ -136,6 +141,12 @@ export default {
 }
 
 #navDrawer{
+  position: fixed !important;
+  height: 100vh !important;
+
+  .v-navigation-drawer__content{
+    overflow: hidden;
+  }
   @include sm {
     position: fixed !important;
     height: 100vh !important;
@@ -143,6 +154,20 @@ export default {
   @include xs {
     position: fixed !important;
     height: 100vh !important;
+  }
+}
+
+.credit{
+  margin: 5%;
+  padding-left: 20%;
+  p{
+    font-size: $mobile-text-size;
+    color: $lightgrey;
+  }
+  a{
+    font-size: $mobile-text-size;
+    color: $lightgrey;
+    text-decoration: none;
   }
 }
 </style>

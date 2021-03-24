@@ -127,7 +127,7 @@ export default {
         tools: 'PyCharm / GitHub'
       }, {
         img: require('~/assets/img/works/screenshot5.png'),
-        url: '/',
+        url: 'https://wp.takumiminohara.site',
         git: 'https://github.com/taky95/wp-theme-takumi ',
         title: 'Portfolio 1.0',
         desc: 'This was my first portfolio based on WP. I wanted to learn more about CMS and server-side programming, so I chose to do it on WordPress. Now, it’s providing an API to help this website work. ',

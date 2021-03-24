@@ -137,6 +137,8 @@ export default {
   @include xs {
     width: 40px !important;
     height: 40px !important;
+    bottom: 20%;
+    right: 5%;
   }
 }
 

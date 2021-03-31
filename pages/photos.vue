@@ -11,8 +11,8 @@
       <div class="photoDesc" :class="{photoDescDark:isDarkMode}">
         <h1>Photography</h1>
         <p>
-          is another passion i pursue outside of my coding life.
-          I love traveling, eating, experiencing stuff, and capture the moment...
+          is another passion I pursue outside of my coding life.
+          I love traveling, eating, experiencing new activities, and capture the moment...
           I have shared some of my favourite pictures here.
           The photos here are licensed under copy right free. You can use them however you want,
           as long as you credit me on your project.

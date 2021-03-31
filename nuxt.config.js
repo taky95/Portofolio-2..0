@@ -7,24 +7,32 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s |takumi\'s website',
+    titleTemplate: '%s | Tak\'s website',
     // title: '',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'en',
+      prefix: 'og: http://ogp.me/ns#'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'takumi&#39;s portfolio' }
+      { hid: 'description', name: 'description', content: 'takumi\'s Portfolio' },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'Tak\'s Portfolio' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:url', property: 'og:url', content: 'https://takumiminohara.site' },
+      { hid: 'og:title', property: 'og:title', content: 'Tak\'s Portfolio' },
+      { hid: 'og:description', property: 'og:description', content: 'I\'m currently open to any project. Please get in touch from the contact page.' },
+      { hid: 'og:image', property: 'og:image', content: '~/assets/img/thumb.png' },
+      { name: 'twitter:card', content: 'summary' },　//twitter
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {
+      {/*
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css2?' +
           'family=Quicksand:wght@400;600&' +
           'family=Shippori+Mincho:wght@500&' +
-          'family=Source+Code+Pro:wght@300&display=swap'
+          'family=Source+Code+Pro:wght@300&display=swap'*/
       }
     ]
   },
@@ -36,6 +44,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    {src: '~/plugins/webFontLoader.js', ssr: false}
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

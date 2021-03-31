@@ -9,7 +9,7 @@
           <v-icon
             v-for="object in content"
             :key="object.index"
-            size="50"
+            size="40"
             :color="isSelected(object.icon)"
             @click="selectIcon(object); clicked()"
           >
@@ -19,8 +19,9 @@
             <h3>
               {{ skillName }}
             </h3>
-            <p>{{ skillDesc }}</p>
-            <p>{{ skillExp * 2 }} % of familiarity</p>
+            <p style="white-space: pre-wrap">{{ skillDesc }}
+            </p>
+            <p> Familiarity: {{ skillExp * 2 }}%</p>
           </div>
           <v-progress-linear
             v-model="skillExp"

@@ -93,15 +93,15 @@ export default {
     color: $skyblue;
   }
 }@keyframes light-fadeOut{
-   0%{
-     opacity: 1;
-     color: $skyblue;
-   }
-   100%{
-     opacity: 0;
-     color: $white;
-   }
- }
+  0%{
+    opacity: 1;
+    color: $skyblue;
+  }
+  100%{
+    opacity: 0;
+    color: $white;
+  }
+  }
 @keyframes dark-fadeIn{
   0%{
     opacity: 0;
@@ -112,15 +112,15 @@ export default {
     color: $slateblue;
   }
 }@keyframes dark-fadeOut{
-   0%{
-     opacity: 1;
-     color: $darkgrey;
-   }
-   100%{
-     opacity: 0;
-     color: $slateblue;
-   }
- }
+  0%{
+    opacity: 1;
+    color: $darkgrey;
+  }
+  100%{
+    opacity: 0;
+    color: $slateblue;
+  }
+  }
 
 // btn flex wrapper
 .menu{
@@ -289,7 +289,8 @@ export default {
 }
 
 .disableBtn{
-  display: none;
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 </style>

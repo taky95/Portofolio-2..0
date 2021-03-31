@@ -478,6 +478,7 @@ export default {
 h1{
   font-family: $header-font;
   font-size: $header-size;
+  font-weight: normal;
   position: absolute;
   top: 100px;
   text-align: left;

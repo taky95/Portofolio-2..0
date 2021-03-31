@@ -25,6 +25,7 @@ Takumi's portfolio2.0
 * SnazzyMaps
 * SendinBlue
 * nuxtjs@/dotenv
+* webfontloader
 
 ## Build Setup
 ```bash

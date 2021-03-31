@@ -30,7 +30,7 @@
               <v-col cols="12" md="3" class="worksLbl">
                 Overview:
               </v-col>
-              <v-col>{{ work.desc }}</v-col>
+              <v-col style="white-space: pre-wrap">{{ work.desc }}</v-col>
             </v-row>
             <v-row>
               <v-col cols="12" md="3" class="worksLbl">
@@ -87,14 +87,14 @@ export default {
         desc: 'This was my early personal project. A parallax website template designed for simple use such as landing pages for small business owners. The project started when my friend started up a business and he needed something quick to spread the word. I configured it in only js and CSS, but I learnt a lot about CSS animation and basic Javascript from this project.',
         lang: 'JS / jQuery / CSS / HTML',
         lib: 'jQuery transition box / jQuery scrollTo',
-        tools: 'Sublime Text/GCP'
+        tools: 'Sublime Text / GCP'
       }, {
         img: require('~/assets/img/works/screenshot2.png'),
         url: 'https://rails.takumiminohara.site/ ',
         git: 'https://github.com/ARealHumanBean/student-queue-project',
         title: 'Student Queue Project',
         desc: 'This is an app designed to be used in a school environment where students have to queue up to ask their questions meanwhile teachers can’t keep track of them, thus it leads to students missing the learning opportunities. This app reads the CSV form of the class list and creates users with categorized question lists. Students can log in to the app by using student credentials, and push the questions by the categories (such as the question, support, demo). Teachers can see the student’s questions along with who they are, and when they have asked. The queue is controlled in real-time sync, so there are no conflicts between students. I took part as a front engineer and mainly worked on UI. \n' +
-          'For demo purposes, sample users are provided. To log in as an instructor, use "C0000001", and use "C0000002" to log in as a student.',
+              '\nThere\'re sample users provided for Demo purposes. You can log in by "C0000001" as a Teacher, and by "C0000002" as a student.',
         lang: 'JS / CoffeeScript / CSS / HTML / Bootstrap / Ruby on Rails / MySQL',
         lib: '-',
         tools: 'AWE(cloud9 IDE) / Heroku / Github / Google Fonts'
@@ -132,7 +132,7 @@ export default {
         title: 'Portfolio 1.0',
         desc: 'This was my first portfolio based on WP. I wanted to learn more about CMS and server-side programming, so I chose to do it on WordPress. Now, it’s providing an API to help this website work. ',
         lang: 'PHP / WordPress / JS / Scss / jQuery',
-        lib: 'emergence.js, lit.js / jQuery scrollTo.js / jQuery vide.js / Animate.css',
+        lib: 'emergence.js / lit.js / jQuery scrollTo.js / jQuery vide.js / Animate.css',
         tools: 'GCP / Bracket / CloudFlare / GitHub'
       }],
       // selected work data

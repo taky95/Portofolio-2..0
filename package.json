@@ -19,7 +19,8 @@
     "kute.js": "^2.1.0",
     "nuxt": "^2.14.12",
     "vue-silentbox": "^2.4.3",
-    "vue-typical": "^1.6.2"
+    "vue-typical": "^1.6.2",
+    "webfontloader": "^1.6.28"
   },
   "devDependencies": {
     "@nuxt/types": "^2.14.12",

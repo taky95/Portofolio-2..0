@@ -22,7 +22,7 @@ export default {
       { hid: 'og:url', property: 'og:url', content: 'https://takumiminohara.site' },
       { hid: 'og:title', property: 'og:title', content: 'Tak\'s Portfolio' },
       { hid: 'og:description', property: 'og:description', content: 'I\'m currently open to any project. Please get in touch from the contact page.' },
-      { hid: 'og:image', property: 'og:image', content: '~/assets/img/thumb.png' },
+      { hid: 'og:image', property: 'og:image', content: 'https://takumiminohara.site/thumb.png' },
       { name: 'twitter:card', content: 'summary' },　//twitter
     ],
     link: [

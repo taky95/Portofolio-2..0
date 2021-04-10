@@ -5,6 +5,7 @@
         <h1 class="worksTitle">
           {{ work.title }}
         </h1>
+        <p>{{ work.date }}</p>
         <div class="worksHead">
           <img class="worksThumb" :src="work.img" alt="">
           <div class="worksDemo">
@@ -28,25 +29,25 @@
           <v-container>
             <v-row>
               <v-col cols="12" md="3" class="worksLbl">
-                Overview:
+                Overview: 
               </v-col>
               <v-col style="white-space: pre-wrap">{{ work.desc }}</v-col>
             </v-row>
             <v-row>
               <v-col cols="12" md="3" class="worksLbl">
-                Language & Framework:
+                Languages & Frameworks: 
               </v-col>
               <v-col>{{ work.lang }}</v-col>
             </v-row>
             <v-row>
               <v-col cols="12" md="3" class="worksLbl">
-                Libraries
+                Libraries: 
               </v-col>
               <v-col>{{ work.lib }}</v-col>
             </v-row>
             <v-row>
               <v-col cols="12" md="3" class="worksLbl">
-                Tools
+                Tools: 
               </v-col>
               <v-col>{{ work.tools }}</v-col>
             </v-row>
@@ -83,6 +84,7 @@ export default {
         img: require('~/assets/img/works/screenshot.png'),
         url: 'https://test.takumiminohara.site/',
         git: 'https://github.com/taky95/simple-parallax-website-template',
+        date: '2018.06 - 2018.07',
         title: 'Parallax Website',
         desc: 'This was my early personal project. A parallax website template designed for simple use such as landing pages for small business owners. The project started when my friend started up a business and he needed something quick to spread the word. I configured it in only js and CSS, but I learnt a lot about CSS animation and basic Javascript from this project.',
         lang: 'JS / jQuery / CSS / HTML',
@@ -92,6 +94,7 @@ export default {
         img: require('~/assets/img/works/screenshot2.png'),
         url: 'https://rails.takumiminohara.site/ ',
         git: 'https://github.com/ARealHumanBean/student-queue-project',
+        date: '2016.09 - 2017.06',
         title: 'Student Queue Project',
         desc: 'This is an app designed to be used in a school environment where students have to queue up to ask their questions meanwhile teachers can’t keep track of them, thus it leads to students missing the learning opportunities. This app reads the CSV form of the class list and creates users with categorized question lists. Students can log in to the app by using student credentials, and push the questions by the categories (such as the question, support, demo). Teachers can see the student’s questions along with who they are, and when they have asked. The queue is controlled in real-time sync, so there are no conflicts between students. I took part as a front engineer and mainly worked on UI. \n' +
               '\nThere\'re sample users provided for Demo purposes. You can log in by "C0000001" as a Teacher, and by "C0000002" as a student.',
@@ -102,6 +105,7 @@ export default {
         img: require('~/assets/img/works/screenshot4.png'),
         url: 'https://react.takumiminohara.site',
         git: 'https://github.com/taky95/spa-react-template',
+        date: '2019.07 - 2019.08',
         title: 'SPA Website',
         desc: 'This is my personal project. A SPA website that runs smooth video background, and fully responsive. I created this on the assumption of taking the same project as the Parallax website and wanted to provide an improved version by configuring React. The site is using React Router to make SPA features to prevent users from loading each page.  ',
         lang: 'React / HTML / Scss',
@@ -111,6 +115,7 @@ export default {
         img: require('~/assets/img/works/screenshot3.png'),
         url: 'http://capstone.camosun.ca/archived-capstone/June2017/',
         git: 'https://gitlab.com/camosunwebcommittee/tech-symposium',
+        date: '2016.09 - 2017.05',
         title: 'Capstone Project',
         desc: 'Landing page for Camosun College capstone project 2017. I took part as a front-end developer. ',
         lang: 'PHP / HTML / CSS',
@@ -120,6 +125,7 @@ export default {
         img: require('~/assets/img/works/noimg.png'),
         url: '/',
         git: 'https://github.com/ProGorilla007/Macy ',
+        date: '2020.12 - 2021.02',
         title: 'Macy',
         desc: 'This is my personal project. A web application provides a customizable link hub page that can be shared by a dedicated NFC card. It’s started in mind to replace a traditional business card with NFC cards has all of your social media and links. It is supposed to help get rid of the hassle to exchange multiple contact information or help to advertise your business’s social media accounts just by a tap at the cashier. Users can create the links from preset social media, or choose their own links to share. The user page can be customized freely by uploading your profile and header images. \n**It’s currently in development. **',
         lang: 'Python / Django / JS / HTML / Sass / jQuery / MySQL',
@@ -129,6 +135,7 @@ export default {
         img: require('~/assets/img/works/screenshot5.png'),
         url: 'https://wp.takumiminohara.site',
         git: 'https://github.com/taky95/wp-theme-takumi ',
+        date: '2019.01 - 2019.03',
         title: 'Portfolio 1.0',
         desc: 'This was my first portfolio based on WP. I wanted to learn more about CMS and server-side programming, so I chose to do it on WordPress. Now, it’s providing an API to help this website work. ',
         lang: 'PHP / WordPress / JS / Scss / jQuery',
@@ -140,6 +147,7 @@ export default {
         img: '',
         url: '',
         git: '',
+        date: '',
         title: '',
         desc: '',
         lang: '',
@@ -171,6 +179,7 @@ export default {
       this.work.img = this.works[0].img
       this.work.url = this.works[0].url
       this.work.git = this.works[0].git
+      this.work.date = this.works[0].date
       this.work.title = this.works[0].title
       this.work.desc = this.works[0].desc
       this.work.lang = this.works[0].lang
@@ -181,6 +190,7 @@ export default {
       this.work.img = selected.img
       this.work.url = selected.url
       this.work.git = selected.git
+      this.work.date = selected.date
       this.work.title = selected.title
       this.work.desc = selected.desc
       this.work.lang = selected.lang

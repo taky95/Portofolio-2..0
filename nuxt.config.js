@@ -26,20 +26,14 @@ export default {
       { name: 'twitter:card', content: 'summary' },　//twitter
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {/*
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?' +
-          'family=Quicksand:wght@400;600&' +
-          'family=Shippori+Mincho:wght@500&' +
-          'family=Source+Code+Pro:wght@300&display=swap'*/
-      }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     // '~/assets/variables.scss'
+    '@mdi/font/css/materialdesignicons.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -59,7 +53,8 @@ export default {
     '@nuxtjs/style-resources',
     '@nuxtjs/axios',
     '@nuxtjs/dotenv',
-    'nuxt-gsap-module'
+    'nuxt-gsap-module',
+    //['@nuxtjs/vuetify', { iconfont: 'mdi' }]
   ],
 
   env: {
@@ -88,15 +83,7 @@ export default {
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     treeShake: true,
-    defaultAssets: {
-      font: {
-        family: 'Quicksand'
-      },
-      icons: 'mdi'
-    },
-    icons: {
-      iconfont: 'mdi'
-    },
+    defaultAssets: false,
     theme: {
       // dark: false,
       themes: {

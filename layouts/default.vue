@@ -12,6 +12,7 @@
       color="accent"
       fab
       @click.stop="openMenu=!openMenu"
+      aria-label="open menu"
     >
       <v-icon>mdi-plus</v-icon>
     </v-btn>
@@ -50,12 +51,13 @@
         <a href="https://www.vecteezy.com/free-vector/shapes">Shapes Vectors by Vecteezy</a>
       </div>
       <v-btn
-        class="mx-2 fltMenu"
+        class="mx-2 fltMenu close"
         right
         fixed
         color="primary"
         fab
         @click.stop="openMenu=!openMenu"
+        aria-label="close menu"
       >
         <v-icon style="transform: rotate(45deg)">
           mdi-plus
@@ -138,6 +140,14 @@ export default {
     width: 40px !important;
     height: 40px !important;
     right: 5%;
+  }
+}
+
+.fltMenu.close{
+  @include sm {
+  }
+  @include xs {
+    bottom: 20%  
   }
 }
 

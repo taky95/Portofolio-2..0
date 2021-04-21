@@ -4,6 +4,7 @@
       icon
       href="https://github.com/taky95"
       target="_blank"
+      aria-label="github"
     >
       <v-icon size="30">
         mdi-github
@@ -13,6 +14,7 @@
       icon
       href="https://www.linkedin.com/in/takumiminohara/"
       target="_blank"
+      aria-label="linkedin"
     >
       <v-icon size="30">
         mdi-linkedin
@@ -22,6 +24,7 @@
       icon
       href="mailto:takumi.minohara08@gmail.com"
       target="_blank"
+      aria-label="email"
     >
       <v-icon size="30">
         mdi-email-mark-as-unread

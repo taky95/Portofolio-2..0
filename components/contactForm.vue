@@ -39,6 +39,7 @@
         color="accent"
         :disabled="!valid"
         @click.prevent="submit"
+        aria-label="Submit"
       >
         Submit
       </v-btn>
